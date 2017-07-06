@@ -39,12 +39,12 @@
       this.htmlDoc1.CloseBody();
       this.htmlDoc1.CloseHTML();
       this.buttonSave.Enabled = true;
-      MessageBox.Show(string.Format("Your Html document has been created, you can save it if you want to view it."));
+      MessageBox.Show("Your Html document has been created, you can save it if you want to view it.");
     }
 
     private void ButtonSaveClick(object sender, EventArgs e)
     {
-      this.saveFileDialog1.Filter = string.Format("html files (*.html)|*.html|htm files (*.htm)|*.htm|All files (*.*)|*.*");
+      this.saveFileDialog1.Filter = "html files (*.html)|*.html|htm files (*.htm)|*.htm|All files (*.*)|*.*";
       this.saveFileDialog1.FilterIndex = 1;
 
       if (this.saveFileDialog1.ShowDialog() == DialogResult.OK)
